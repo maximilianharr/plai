@@ -1,4 +1,4 @@
-# D:AI:MLER - Daimler Artificial Intelligence Map Library for Error Reporting
+# PL:AI - Playground Library for Artificial Development
 Code-Snippets, tutorials and librarys for AI development
 
 ## Installation
