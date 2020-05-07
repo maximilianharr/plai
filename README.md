@@ -1,5 +1,5 @@
-# PL:AI - Playground Library for Artificial Development
-Code-Snippets, tutorials and librarys for AI development
+# PL:AI - Playground Library for Artificial Intelligence
+Code-Snippets, tutorials and librarys for AI algorithm development
 
 ## Installation
 
@@ -54,6 +54,11 @@ Source virual environment
 ```bash
 source venv/bin/activate
 ```
+
+## Misc
+
+### Presentation about AI
+https://docs.google.com/presentation/d/1TeR-_v_WoZFvz8AkOEy-XYhMKhS0AVy31fzfF2hcAQQ/edit?usp=sharing
 
 ## Known Bugs
 ### pandas_ml import error
