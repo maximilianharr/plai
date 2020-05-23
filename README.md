@@ -60,6 +60,32 @@ source venv/bin/activate
 ### Presentation about AI
 https://docs.google.com/presentation/d/1TeR-_v_WoZFvz8AkOEy-XYhMKhS0AVy31fzfF2hcAQQ/edit?usp=sharing
 
+### AI Hands-On Tutorials
+- "Machine Learning von A-Z: Lerne Python & R für Data Science!" by Jannis Seemann  
+  https://www.udemy.com/course/machine-learning-komplett/  
+- "Deep Learning, Neuronale Netze & AI: Der Komplettkurs" by Jannis Seemann  
+  https://www.udemy.com/course/deep-learning-und-ai/  
+- "Complete Guide to TensorFlow for Deep Learning with Python" by Jose Portilla"  
+  https://www.udemy.com/course/complete-guide-to-tensorflow-for-deep-learning-with-python/  
+
+### Jupyter-Notebooks
+
+#### Start jupyter-notebook
+```bash
+jupyter-notebook
+```
+
+#### Convert *.ipynb to *.py
+```bash
+jupyter nbconvert --to=python --output-dir=./ ${SCRIPT}.ipynb
+```
+
+#### Jupyer dark mode
+```bash
+pip install jupyterthemess
+jt -t chesterish
+```
+
 ## Known Bugs
 ### pandas_ml import error
 Problem:  
