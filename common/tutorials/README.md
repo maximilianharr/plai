@@ -46,6 +46,18 @@ from pandas import get_dummies
 ```
 
 ---
+## Basisc
+
+### Actication Funtions
+Idea: Approximate complex functions with set of simple functions (e.g. compare Taylor-Series).  
+Notebook: 50_cnn
+```bash
+import keras
+```
+<img src="./doc/activation_functions.png" alt="kMeans" width="300"/>
+
+
+---
 ## Classification
 
 ### KMeans
@@ -234,11 +246,41 @@ import graphviz
 ```
 
 ---
-## Special Models for Different Domains
-### CNNs - Convolutional Neural Networks
 
-Idea: Train convolution (popular operator on images) matrices on labeled images.  
-Notebook: 49_cnn  
+## CNNs - Convolutional Neural Networks
+Train convolution (popular operator on images) matrices on labeled images.  
+
+### CNN-Layer : Convolution
+Idea: Add convolution layer (popular operator on images)
+Notebook: 50_cnn  
 ```bash
 from keras.layers import Conv2D
 ```
+
+### CNN-Layer : Dropout
+Idea: Do not optimize some weights in optimization step. Helps to remove predominance of some weights.
+Notebook: 50_cnn  
+```bash
+from keras.layers import Dropout
+```
+
+### CNN-Layer : Flatten
+Idea: 
+Notebook: 50_cnn  
+```bash
+from keras.layers import Flatten
+```
+
+### CNN-Layer : Max-Pooling
+Idea: Make net robust against small translation by taking max value of mask (convolution).
+Notebook: 50_cnn  
+```bash
+from keras.layers import MaxPooling2D
+```
+
+###  Visualize CNN
+Project: https://www.cs.ryerson.ca/~aharley/vis/
+
+
+
+
