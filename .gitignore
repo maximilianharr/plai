@@ -7,7 +7,6 @@
 #*.o
 #*.so
 build/
-res/ 
 
 # Packages #
 ############
@@ -62,3 +61,8 @@ res/
 doc/html/*
 *.prof
 *.bak
+
+# Project Specifics #
+#####################
+res/
+.directory

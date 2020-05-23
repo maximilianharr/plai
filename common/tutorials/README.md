@@ -1,5 +1,8 @@
 # Tutorials
 
+## Kaggle
+https://www.kaggle.com/python10pm/sklearn-35-best-tips-and-tricks
+
 ## Data Peparation
 
 ### Scale Data
@@ -15,6 +18,18 @@ Notebook:
 ```bash
 from sklearn. import 
 ```
+
+### Increase training data by adding noise (images)
+Idea: Make detector more robust by changing input data (shift, zoom, glare, noise, coloring, etc.)
+Notebook: DL_11_image_processing / DL_10_cnn_car_detection
+```bash
+from keras.preprocessing.image import ImageDataGenerator
+import albumentations as A
+```
+<img src="./doc/image_augmentation.png" alt="Image Augmentation" width="300"/>
+
+
+
 
 ### Convert Data
 Idea: x  
@@ -50,12 +65,18 @@ from pandas import get_dummies
 
 ### Actication Funtions
 Idea: Approximate complex functions with set of simple functions (e.g. compare Taylor-Series).  
-Notebook: 50_cnn
+Notebook: 50_cnn 
 ```bash
 import keras
 ```
 <img src="./doc/activation_functions.png" alt="kMeans" width="300"/>
 
+### Optimizers
+Idea: Use numerical optimizers to optimize nets (e.g. rmsprop, adam, )  
+Notebook: DL_10_cnn_car_detection
+```bash
+from keras.optimizers import RMSprop ...
+```
 
 ---
 ## Classification

@@ -3,6 +3,12 @@ Code-Snippets, tutorials and librarys for AI algorithm development
 
 ## Installation
 
+### Cloud Computing
+If you do not want to setup the environment on your computer, you can also execute your jupyter-notebooks on:
+- Google Colab https://colab.research.google.com/drive/
+- Kaggle https://www.kaggle.com/
+- AWS https://aws.amazon.com/
+
 ### Clone repo
 ```bash
 git clone https://github.com/maximilianharr/plai plai
@@ -12,6 +18,7 @@ git clone https://github.com/maximilianharr/plai plai
 ```bash
 python3 -m venv ./venv
 source venv/bin/activate
+python3 -m pip install albumentations
 python3 -m pip install graphviz
 python3 -m pip install jupyter
 python3 -m pip install keras
