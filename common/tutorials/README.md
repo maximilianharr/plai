@@ -315,7 +315,7 @@ Project: https://www.cs.ryerson.ca/~aharley/vis/
 
 ### Transfer Learning
 Idea: Use pre-trained models (computationally demanding) to initialize weights and change last layer.
-Notebook: 
+Notebook: DL_13_Transfer_Learning  
 ```bash
 from 
 ```
