@@ -12,7 +12,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/maximilianharr/plai",
-    packages=['visualization', 'workspace', 'interfaces'],
+    packages=['visualization', 'workspace', 'interfaces', 'yolo'],
     package_dir={'': 'plai'},
     classifiers=[
         "Programming Language :: Python :: 3",

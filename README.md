@@ -25,12 +25,23 @@ python3 -m pip install keras
 python3 -m pip install matplotlib
 python3 -m pip install nltk
 python3 -m pip install numpy
+python3 -m pip install opencv-python
 python3 -m pip install pandas
+python3 -m pip install requests
 python3 -m pip install scikit-image
 python3 -m pip install seaborn
 python3 -m pip install sklearn
 python3 -m pip install tensorflow
 python3 -m pip install urllib3
+```
+
+CNNs
+https://pypi.org/project/darknetpy/
+https://pypi.org/project/yolov3/
+
+```bash
+python3 -m pip install darknetpy
+python3 -m pip install yolov3
 ```
 
 Upgrade packages using:
@@ -63,6 +74,12 @@ source venv/bin/activate
 ```
 
 ## Misc
+
+### AI datasets
+Some popular datasets are listed at https://www.tensorflow.org/datasets/catalog/overview
+
+### Pre-trained AI models
+
 
 ### Presentation about AI
 https://docs.google.com/presentation/d/1TeR-_v_WoZFvz8AkOEy-XYhMKhS0AVy31fzfF2hcAQQ/edit?usp=sharing
