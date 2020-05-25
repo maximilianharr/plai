@@ -1,9 +1,29 @@
 # Tutorials
+This a quick overview (One-Liner) of AI tools / methods. For details please visit the linked notebook.
 
 ## Kaggle
 https://www.kaggle.com/python10pm/sklearn-35-best-tips-and-tricks
 
 ## Data Peparation
+
+### Image Data
+
+#### Unify image data
+Idea: To train / use nets on image data, images need to be made uniform (size, scaling, coloring, brightness  etc) to fit input layer of net.  
+Notebook: DL_12_Model_Zoo
+```bash
+from keras.preprocessing.image import ...
+from keras.applications.vgg16 import preprocess_input
+```
+
+#### Increase training data by adding noise (images)
+Idea: Make detector more robust by changing input data (shift, zoom, glare, noise, coloring, etc.)
+Notebook: DL_11_image_processing / DL_10_cnn_car_detection
+```bash
+from keras.preprocessing.image import ImageDataGenerator
+import albumentations as A
+```
+<img src="./doc/image_augmentation.png" alt="Image Augmentation" width="300"/>
 
 ### Scale Data
 Idea: Scale data e.g. for models which compute distance between features  
@@ -18,18 +38,6 @@ Notebook:
 ```bash
 from sklearn. import 
 ```
-
-### Increase training data by adding noise (images)
-Idea: Make detector more robust by changing input data (shift, zoom, glare, noise, coloring, etc.)
-Notebook: DL_11_image_processing / DL_10_cnn_car_detection
-```bash
-from keras.preprocessing.image import ImageDataGenerator
-import albumentations as A
-```
-<img src="./doc/image_augmentation.png" alt="Image Augmentation" width="300"/>
-
-
-
 
 ### Convert Data
 Idea: x  
@@ -302,6 +310,15 @@ from keras.layers import MaxPooling2D
 ###  Visualize CNN
 Project: https://www.cs.ryerson.ca/~aharley/vis/
 
+---
+## Misc
 
+### Transfer Learning
+Idea: Use pre-trained models (computationally demanding) to initialize weights and change last layer.
+Notebook: 
+```bash
+from 
+```
+<img src="../doc/imagenet_challenge.png" alt="ImageNet Challenge" width="500"/>
 
 

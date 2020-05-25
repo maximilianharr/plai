@@ -75,13 +75,8 @@ source venv/bin/activate
 
 ## Misc
 
-### AI datasets
-Some popular datasets are listed at https://www.tensorflow.org/datasets/catalog/overview
-
-### Pre-trained AI models
-
-
 ### Presentation about AI
+./common/tutorials/README.md
 https://docs.google.com/presentation/d/1TeR-_v_WoZFvz8AkOEy-XYhMKhS0AVy31fzfF2hcAQQ/edit?usp=sharing
 
 ### AI Hands-On Tutorials
@@ -91,6 +86,13 @@ https://docs.google.com/presentation/d/1TeR-_v_WoZFvz8AkOEy-XYhMKhS0AVy31fzfF2hc
   https://www.udemy.com/course/deep-learning-und-ai/  
 - "Complete Guide to TensorFlow for Deep Learning with Python" by Jose Portilla"  
   https://www.udemy.com/course/complete-guide-to-tensorflow-for-deep-learning-with-python/  
+
+
+### Further information / links
+https://neurohive.io/en/  
+Some popular datasets are listed at https://www.tensorflow.org/datasets/catalog/overview  
+Implementations of common nets: https://github.com/keras-team/keras-applications  
+Trained common nets: https://keras.io/api/applications/  
 
 ### Jupyter-Notebooks
 
