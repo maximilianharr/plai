@@ -83,7 +83,7 @@ import keras
 Idea: Use numerical optimizers to optimize nets (e.g. rmsprop, adam, )  
 Notebook: DL_10_cnn_car_detection
 ```bash
-from keras.optimizers import RMSprop ...
+from keras.optimizers import RMSprop Adam...
 ```
 
 ---
