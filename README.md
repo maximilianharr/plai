@@ -90,9 +90,13 @@ https://docs.google.com/presentation/d/1TeR-_v_WoZFvz8AkOEy-XYhMKhS0AVy31fzfF2hc
 
 ### Further information / links
 https://neurohive.io/en/  
-Some popular datasets are listed at https://www.tensorflow.org/datasets/catalog/overview  
 Implementations of common nets: https://github.com/keras-team/keras-applications  
 Trained common nets: https://keras.io/api/applications/  
+
+#### Popular datasets
+Some popular datasets are listed at https://www.tensorflow.org/datasets/catalog/overview  
+Coco (Common Objects in Context) http://cocodataset.org/#home 
+Openimages https://storage.googleapis.com/openimages/web/index.html  
 
 ### Jupyter-Notebooks
 
