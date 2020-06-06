@@ -39,7 +39,11 @@ CNNs
 https://pypi.org/project/darknetpy/
 https://pypi.org/project/yolov3/
 
+@todoUnfortunately this does not work yet:
 ```bash
+sudo apt install rustc
+pip install --upgrade pip setuptools wheel
+python3 -m pip install bottleneck
 python3 -m pip install darknetpy
 python3 -m pip install yolov3
 ```
@@ -112,7 +116,7 @@ jupyter nbconvert --to=python --output-dir=./ ${SCRIPT}.ipynb
 
 #### Jupyer dark mode
 ```bash
-pip install jupyterthemess
+pip install jupyterthemes
 jt -t chesterish
 ```
 
