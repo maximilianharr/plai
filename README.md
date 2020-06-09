@@ -120,6 +120,9 @@ pip install jupyterthemes
 jt -t chesterish
 ```
 
+## Frameworks
+https://github.com/facebookresearch/detr
+
 ## Known Bugs
 ### pandas_ml import error
 Problem:  
