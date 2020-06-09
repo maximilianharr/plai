@@ -9,6 +9,16 @@ If you do not want to setup the environment on your computer, you can also execu
 - Kaggle https://www.kaggle.com/
 - AWS https://aws.amazon.com/
 
+### Docker container
+If you do not want to setup the environment on your computer, you can also run it in a docker container.
+For details see the REAMDE.md in the docker folder.
+```bash
+cd docker 
+docker build -t planets/tatooine tatooine
+docker run --gpus all --user kenobi --publish 8891:8891 --volume ${HOME}/workspace:/home/kenobi/workspace -h tatooine -it planets/tatooine bash
+jupyter-notebook --port 8891 --ip 0.0.0.0 --NotebookApp.token='maytheforce'
+```
+
 ### Clone repo
 ```bash
 git clone https://github.com/maximilianharr/plai plai

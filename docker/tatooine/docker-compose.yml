@@ -1,0 +1,16 @@
+version: '3'
+services:
+  planet_tatooine:
+    image: planets/tatooine
+    #build: .
+    ports:
+    - "8891:8891"
+    volumes:
+    - ${USER}/workspace:/home/kenobi/workspace
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    user: kenobi
+    # https://github.com/portainer/portainer/issues/399#issuecomment-268140949
+    command: --gpus all
+    command: python /home/kenobi/workspace/docker/tensorflow/check_tf.py
+    #command: bash -c "cd home/kenobi && jupyter-notebook --port 8891 --ip 0.0.0.0 --NotebookApp.token=''"

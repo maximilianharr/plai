@@ -26,18 +26,18 @@ docker run --gpus all -it tensorflow/tensorflow:latest-gpu bash
 ### Build specific docker
 Make sure to be in the folder containing the Dockerfile  
 ```bash
-docker build -t sensai/full .
+docker build -t planets/tatooine tatooine
 ```
 
 ## Run Jupyer-Notebook in container (normal)
 1) Run docker container (open port 8891 or any other open port for jupyter):
 ```bash
-docker run --gpus all --user harrmax --publish 8891:8891 --volume ~/workspace:/home/harrmax/workspace --name sensai-docker -it sensai/full bash
+docker run --gpus all --user kenobi --publish 8891:8891 --volume ~/workspace:/home/kenobi/workspace --name planet-tatooine -it planets/tatooine bash
 ```
 
 2) Run jupyer-notebook in docker container:
 ```bash
-jupyter-notebook --port 8891 --ip 0.0.0.0 --NotebookApp.token='sensai'
+jupyter-notebook --port 8891 --ip 0.0.0.0 --NotebookApp.token='maytheforce'
 ```
 
 3) Open firefox on host and enter: http://0.0.0.0:8891
@@ -65,3 +65,27 @@ config = tf.compat.v1.ConfigProto()
 config.gpu_options.allow_growth = True
 session = tf.compat.v1.InteractiveSession(config=config)
 ```
+
+## Miscellaneous
+
+### Docker Cheatsheat
+
+#### Show all containers
+```bash
+docker ps -a
+```
+#### Remove all containers
+```bash
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+```
+
+### Naming conventions
+Star Wars
+
+#### Containers / Computers
+https://en.wikipedia.org/wiki/List_of_Star_Wars_planets_and_moons
+
+#### Users
+https://en.wikipedia.org/wiki/Jedi 
+
