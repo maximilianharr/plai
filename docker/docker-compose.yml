@@ -1,0 +1,16 @@
+version: '3'
+services:
+  sensai_full:
+    image: sensai/full
+    #build: .
+    ports:
+    - "8891:8891"
+    volumes:
+    - /home/harrmax/workspace:/home/harrmax/workspace
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    user: harrmax
+    # https://github.com/portainer/portainer/issues/399#issuecomment-268140949
+    command: sensai_full --gpus all
+    command: python /home/harrmax/workspace/docker/tensorflow/check_tf.py
+    #command: bash -c "cd home/harrmax && jupyter-notebook --port 8891 --ip 0.0.0.0 --NotebookApp.token=''"
