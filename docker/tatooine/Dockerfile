@@ -19,6 +19,11 @@ RUN python3 -m pip install sklearn
 # already installed RUN python3 -m pip install tensorflow
 RUN python3 -m pip install urllib3
 
+# 
+RUN apt update 
+RUN apt install -y libsm6 libxext6
+RUN apt install -y libfontconfig1 libxrender1
+
 # Add user
 RUN useradd -ms /bin/bash kenobi
 

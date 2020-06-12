@@ -32,7 +32,7 @@ docker build -t planets/tatooine tatooine
 ## Run Jupyer-Notebook in container (normal)
 1) Run docker container (open port 8891 or any other open port for jupyter):
 ```bash
-docker run --gpus all --user kenobi --publish 8891:8891 --volume ~/workspace:/home/kenobi/workspace --name planet-tatooine -it planets/tatooine bash
+docker run --gpus all --user kenobi --publish 8891:8891 --volume ${HOME}/workspace:/home/kenobi/workspace -h tatooine -it planets/tatooine bash
 ```
 
 2) Run jupyer-notebook in docker container:
@@ -41,6 +41,12 @@ jupyter-notebook --port 8891 --ip 0.0.0.0 --NotebookApp.token='maytheforce'
 ```
 
 3) Open firefox on host and enter: http://0.0.0.0:8891
+
+x) Open bash in exising docker
+```
+docker container list
+docker exec -it ${CONTAINER_NAME} /bin/bash
+```
 
 ### Run Jupyer-Notebook in docker (docker-compose)
 1) Build and start docker
