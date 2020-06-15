@@ -41,7 +41,10 @@ docker run --gpus all --user kenobi --publish 8891:8891 --volume ${HOME}/workspa
 jupyter-notebook --port 8891 --ip 0.0.0.0 --NotebookApp.token='maytheforce'
 ```
 
-3) Open firefox on host and enter: http://0.0.0.0:8891
+2) Open firefox
+```bash
+firefox http://0.0.0.0:8891/login
+```
 
 x) Open bash in exising docker
 ```
@@ -54,9 +57,10 @@ docker exec -it ${CONTAINER_NAME} /bin/bash
 ```bash
 docker-compose up
 ```
-Open jupyter-notebook in firefox
+
+2) Open firefox
 ```bash
-firefox http://0.0.0.0:8891/tree
+firefox http://0.0.0.0:8891/login
 ```
 
 ## Known Bugs
