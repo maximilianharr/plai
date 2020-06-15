@@ -31,16 +31,15 @@ docker build -t planets/tatooine tatooine
 
 ## Run Jupyer-Notebook in container (normal)
 1) Run docker container (open port 8891 or any other open port for jupyter):
+Do not use --gpus flag if not GPU support (nvidia drivers + GPU) on host
 ```bash
 docker run --gpus all --user kenobi --publish 8891:8891 --volume ${HOME}/workspace:/home/kenobi/workspace -h tatooine -it planets/tatooine bash
 ```
 
-2) Run jupyer-notebook in docker container:
+2) Open firefox
 ```bash
-jupyter-notebook --port 8891 --ip 0.0.0.0 --NotebookApp.token='maytheforce'
+firefox http://0.0.0.0:8891/login
 ```
-
-3) Open firefox on host and enter: http://0.0.0.0:8891
 
 x) Open bash in exising docker
 ```
