@@ -10,4 +10,6 @@ printf "${NC}--------------------------------------------------${NC}\n"
 # Commands
 cd /home/$(whoami)/workspace
 source plai/setup.bash
-jupyter-notebook --port 8891 --ip 0.0.0.0 --NotebookApp.token='maytheforce'
+source /opt/ros/melodic/setup.bash
+roscore
+printf "${RED} Success ${NC}\n"
