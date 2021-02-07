@@ -1,0 +1,14 @@
+albumentations
+graphviz
+jupyter
+keras
+matplotlib
+nltk
+numpy
+opencv-python
+pandas
+requests
+scikit-image
+seaborn
+klearn
+urllib3
