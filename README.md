@@ -9,58 +9,17 @@ If you do not want to setup the environment on your computer, you can also execu
 - Kaggle https://www.kaggle.com/
 - AWS https://aws.amazon.com/
 
-### Docker container
-If you do not want to setup the environment on your computer, you can also run it in a docker container.
-For details see the REAMDE.md in the docker folder.
-```bash
-cd docker 
-docker build -t planets/tatooine tatooine
-docker run --gpus all --user kenobi --publish 8891:8891 --volume ${HOME}/workspace:/home/kenobi/workspace -h tatooine -it planets/tatooine bash
-jupyter-notebook --port 8891 --ip 0.0.0.0 --NotebookApp.token='maytheforce'
-```
 
 ### Clone repo
 ```bash
 git clone https://github.com/maximilianharr/plai plai
 ```
 
-### Set-up virual environment
+### Build and Run Docker Container
 ```bash
-python3 -m venv ./venv
-source venv/bin/activate
-python3 -m pip install albumentations
-python3 -m pip install graphviz
-python3 -m pip install jupyter
-python3 -m pip install keras
-python3 -m pip install matplotlib
-python3 -m pip install nltk
-python3 -m pip install numpy
-python3 -m pip install opencv-python
-python3 -m pip install pandas
-python3 -m pip install requests
-python3 -m pip install scikit-image
-python3 -m pip install seaborn
-python3 -m pip install sklearn
-python3 -m pip install tensorflow
-python3 -m pip install urllib3
-```
-
-CNNs
-https://pypi.org/project/darknetpy/
-https://pypi.org/project/yolov3/
-
-@todoUnfortunately this does not work yet:
-```bash
-sudo apt install rustc
-pip install --upgrade pip setuptools wheel
-python3 -m pip install bottleneck
-python3 -m pip install darknetpy
-python3 -m pip install yolov3
-```
-
-Upgrade packages using:
-```bash
-python3 -m pip install --upgrade ${PKG_NAME}
+cd docker 
+docker-compose build
+docker-compose up
 ```
 
 #### Optional: If you want to use pandas_ml (see "Known Bugs")
@@ -70,21 +29,10 @@ python3 -m pip install pandas==0.24.0
 python3 -m pip install scikit-learn==0.20.0
 ```
 
-### Unit-Tests
+## Unit-Tests
 Run all unittests using
 ```bash
 python3 ${PATH_TO_WS}/common/tools/run_all_unittests.py
-```
-
-## Runtime
-Install path to libaries
-```bash
-source ${PATH_TO_WS}/setup.bash
-```
-
-Source virual environment
-```bash
-source venv/bin/activate
 ```
 
 ## Misc
@@ -101,6 +49,9 @@ https://docs.google.com/presentation/d/1TeR-_v_WoZFvz8AkOEy-XYhMKhS0AVy31fzfF2hc
 - "Complete Guide to TensorFlow for Deep Learning with Python" by Jose Portilla"  
   https://www.udemy.com/course/complete-guide-to-tensorflow-for-deep-learning-with-python/  
 
+### CNNs
+https://pypi.org/project/darknetpy/
+https://pypi.org/project/yolov3/
 
 ### Further information / links
 https://neurohive.io/en/  
@@ -142,4 +93,13 @@ Solution (not tested):
 ```bash
 python3 -m pip install pandas==0.24.0
 python3 -m pip install scikit-learn==0.20.0
+```
+
+### Unfortunately this does not work yet:
+```bash
+sudo apt install rustc
+pip install --upgrade pip setuptools wheel
+python3 -m pip install bottleneck
+python3 -m pip install darknetpy
+python3 -m pip install yolov3
 ```
