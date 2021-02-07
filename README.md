@@ -1,6 +1,9 @@
 # PL:AI - Playground Library for Artificial Intelligence
 Code-Snippets, tutorials and librarys for AI algorithm development
 
+<img src="common/doc/img/catdogyolo.png" alt="YOLO" width="300"/>
+
+
 ## Installation
 
 ### Cloud Computing
